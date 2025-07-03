@@ -5,20 +5,26 @@ import Register from './components/Register'
 import Signin from './components/Signin'
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
-import Footer from './components/Footer'
+import ProductDetails from './components/ProductDetails'
+import { ThemeProvider } from './components/theme-provider'
 
 function App() {
   
   return (
+    <ThemeProvider>
     <BrowserRouter>
-      <Navbar/>
+       <Navbar/>
        <Routes>
-        <Route path='/'  element={<Landing/>}/>
+
+         <Route path='/product' element={<ProductDetails/>}/>
+         <Route path='/'  element={<Landing/>}/>
          <Route path="/register" element={<Register/>} />
          <Route path="/signin" element={<Signin/>} />
+        
        </Routes>
-       <Footer/>
+
     </BrowserRouter>
+    </ThemeProvider>
   )
 }
 

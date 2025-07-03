@@ -2,17 +2,19 @@ import ProductCard from './ProductCard'
 
 export default function Landing() {
   return (
-    <div>
-        <div className='hero-section'>  
+    <div className=''>
+        {/* <div className='flex mx-auto '>
+          <div className=''>  
             <h3>Cravings to Usage</h3>  
             <p>
                Buy here whatever but you have to pay the paisa first.
             </p>   
-              <button>
+              <button className='bg-'>
                    Buy now
               </button>
         </div>
-        <div className='cards-container'>
+        </div>
+        <div className=''>
              <div className='card-section'>
                    <ProductCard/>
                    <ProductCard/>
@@ -25,7 +27,7 @@ export default function Landing() {
                     <ProductCard/>
                     <ProductCard/>
               </div>
-        </div>
+        </div> */}
     </div>
   )
 }
