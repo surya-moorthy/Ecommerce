@@ -7,8 +7,14 @@ export default function Navbar() {
   const [login, setLogin] = useState(false)
 
   return (
-    <div className="w-full px-4 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-      
+   <div className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 
+                bg-zinc-100 dark:bg-neutral-900 
+                text-neutral-800 dark:text-neutral-200 
+                w-[95%] max-w-7xl px-4 py-4 
+                flex flex-col gap-4 
+                lg:flex-row lg:items-center lg:justify-between 
+                rounded-b-xl shadow-md">
+
       {/* Logo */}
       <div className="text-center lg:text-left">
         <h2 className="font-medium text-xl lg:text-3xl font-serif">Basy Shops</h2>

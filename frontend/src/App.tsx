@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import ProductDetails from './components/ProductDetails'
 import { ThemeProvider } from './components/theme-provider'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
          <Route path="/signin" element={<Signin/>} />
         
        </Routes>
-
+       <Footer/>
     </BrowserRouter>
     </ThemeProvider>
   )
