@@ -24,8 +24,8 @@ function Register() {
        
     }
     return (
-        <div className="h-screen flex flex-col justify-center ">
-            <div className=" space-y-6 sm:w-full sm:mx-auto sm:max-w-sm">
+        <div className="h-screen flex flex-col justify-center">
+            <div className=" space-y-6 sm:w-full sm:mx-auto sm:max-w-sm dark:text-neutral-50 dark:bg-neutral-800 p-4 rounded-md">
              <h1 className="font-bold text-center text-2xl tracking-tight">
                 Register
             </h1>
@@ -33,7 +33,7 @@ function Register() {
                 <div className="mt-2">
                     <label 
                     htmlFor="name"
-                    className="block text-lg font-medium text-black"
+                    className="block text-lg font-medium text-black dark:text-neutral-50"
                     >Name:
                     </label>
                     <input 
@@ -51,7 +51,7 @@ function Register() {
              
                 <div>
                     <label htmlFor="email"
-                    className="block text-lg font-medium text-black"
+                    className="block text-lg font-medium text-black dark:text-neutral-50"
                      >Email:</label>
                     <input type="email" id="email" name="email" required onChange={(event)=> {
                         setEmail(event.target.value);
@@ -61,7 +61,7 @@ function Register() {
                 </div>
                 <div>
                     <label htmlFor="password"
-                    className="block text-lg font-medium text-black"
+                    className="block text-lg font-medium text-black dark:text-neutral-50"
                     >Password:</label>
                     <input type="password" id="password" name="password" required onChange={(event)=>{
                         setPassword(event.target.value);
@@ -69,7 +69,7 @@ function Register() {
                     className="block min-w-full px-3 py-1.5 rounded-md outline-1 -outlin-offset-1 focus:outline-2 focus:-outline-offset-2 outline-neutral-400 placeholder:text-neutral-400 "
                     />
                 </div>
-                <button onSubmit={handleSubmit} className="block mx-auto px-5 py-2 rounded-md bg-neutral-800 text-white font-semibold text-lg focus:bg-neutral-950">Sign In</button>
+                <button onSubmit={handleSubmit} className="block mx-auto px-5 py-2 rounded-md bg-neutral-800 text-white font-semibold text-lg focus:bg-neutral-950 dark:bg-neutral-900">Register</button>
              </div>
         </div>
     )

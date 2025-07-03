@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom"
 import ProductCard from "./ProductCard"
 import { Button } from "./ui/button"
 
 export default function Landing() {
+  const navigation = useNavigate();
   return (
     <div className="px-4">
       
@@ -15,9 +17,14 @@ export default function Landing() {
         <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-xl">
           Buy whatever you want — but don’t forget to pay the paisa first.
         </p>
-        <Button size="lg">
-          Buy Now
-        </Button>
+        <div className="space-x-5">
+              <Button size="lg">
+                Buy Now
+              </Button>
+              <Button size="lg" onClick={()=>navigation("/register")}>
+                Get started
+              </Button>
+        </div>
       </section>
 
       {/* ✅ Product Grid */}
